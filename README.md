@@ -23,7 +23,7 @@
 ابتدا از طریق Composer نصب کنید:
 
 ```bash
-composer require farzad-forouzanfar/WebCall-client
+composer require asanak/laravel-web-call-client
 ```
 
 سپس فایل پیکربندی را publish نمایید:
