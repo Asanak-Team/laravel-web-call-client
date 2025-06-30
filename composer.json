@@ -1,0 +1,36 @@
+{
+  "name": "asanak/laravel-web-call-client",
+  "description": "A modern Laravel Web Call client for call and reporting via REST API",
+  "type": "laravel-package",
+  "homepage": "http://github.com/",
+  "keywords": [
+    "laravel",
+    "Asanak",
+    "webcall",
+    "api"
+  ],
+  "version": "1.0.0",
+  "require": {
+    "php": "^8.0 || ^8.1 || ^8.2",
+    "guzzlehttp/guzzle": "^7.0",
+    "psr/log": "^1.1 || ^2.0 || ^3.0",
+    "illuminate/support": "^9.0 || ^10.0 || ^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Asanak\\WebCall\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Asanak\\WebCall\\WebCallServiceProvider"
+      ],
+      "aliases": {
+        "AsanakWebCall": "Asanak\\WebCall\\Facade\\AsanakWebCallFacade"
+      }
+    }
+  },
+  "minimum-stability": "stable",
+  "license": "MIT"
+}
